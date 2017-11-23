@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">7023 Scout</string>
+    <string name="action_files">Files</string>
+    <string-array name="ASN">
+        <item>Attempted</item>
+        <item>Successful</item>
+        <item>Neither</item>
+    </string-array>
+    <string-array name="ASR">
+        <item>Attempted</item>
+        <item>Successful</item>
+        <item>Read Key</item>
+        <item>NONE</item>
+    </string-array>
+    <string-array name="YN">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="RZ">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>NONE</item>
+    </string-array>
+    <string-array name="DTR">
+        <item>5 - BEST</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1 - WORST</item>
+    </string-array>
+    <string-array name="AllendaleQualifierTeams">
+        <item>5292</item>
+        <item>5391</item>
+        <item>5957</item>
+        <item>5980</item>
+        <item>6070</item>
+        <item>6283</item>
+        <item>6482</item>
+        <item>7023</item>
+        <item>7772</item>
+        <item>8529</item>
+        <item>8733</item>
+        <item>8932</item>
+        <item>9404</item>
+        <item>10031</item>
+        <item>10037</item>
+        <item>10104</item>
+        <item>10255</item>
+        <item>10315</item>
+        <item>10477</item>
+        <item>10818</item>
+        <item>11266</item>
+        <item>11317</item>
+        <item>11318</item>
+        <item>11531</item>
+        <item>11846</item>
+        <item>11851</item>
+        <item>11899</item>
+        <item>11987</item>
+        <item>12746</item>
+        <item>12757</item>
+        <item>12821</item>
+        <item>12944</item>
+        <item>12946</item>
+        <item>12948</item>
+        <item>13021</item>
+        <item>13300</item>
+    </string-array>
+</resources>
