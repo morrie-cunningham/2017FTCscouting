@@ -1,7 +1,7 @@
 package com.example.morri.ftc_scouting_2017;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -18,8 +18,9 @@ import android.widget.Switch;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -167,10 +168,17 @@ public class MainActivity extends AppCompatActivity {
 
                 // Write JSON to file
                 String outStr = matchNum.getText() + "-" + spinnerTeams.getSelectedItem().toString() + ".json";
-                try {
-                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput(outStr, Context.MODE_PRIVATE));
-                    outputStreamWriter.write(output.toString());
-                    outputStreamWriter.close();
+
+                File dir = new File(Environment.getExternalStorageDirectory() + "/scoutingFiles/");
+                if(!dir.exists()){
+                    dir.mkdir();
+                }
+
+                try{
+                    File outFile = new File(dir, outStr);
+                    FileOutputStream out = new FileOutputStream(outFile);
+                    out.write(output.toString().getBytes());
+                    out.close();
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }

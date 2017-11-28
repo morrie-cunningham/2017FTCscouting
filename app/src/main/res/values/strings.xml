@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">7023 Scout</string>
+    <string name="app_name">FTC-Match-Scout</string>
     <string name="action_files">Files</string>
     <string-array name="ASN">
         <item>Attempted</item>
