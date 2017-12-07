@@ -2,32 +2,32 @@
     <string name="app_name">FTC-Match-Scout</string>
     <string name="action_files">Files</string>
     <string-array name="ASN">
+        <item>Neither</item>
         <item>Attempted</item>
         <item>Successful</item>
-        <item>Neither</item>
     </string-array>
     <string-array name="ASR">
+        <item>NONE</item>
         <item>Attempted</item>
         <item>Successful</item>
         <item>Read Key</item>
-        <item>NONE</item>
     </string-array>
     <string-array name="YN">
-        <item>Yes</item>
         <item>No</item>
+        <item>Yes</item>
     </string-array>
     <string-array name="RZ">
+        <item>NONE</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>NONE</item>
     </string-array>
     <string-array name="DTR">
-        <item>5 - BEST</item>
-        <item>4</item>
-        <item>3</item>
-        <item>2</item>
         <item>1 - WORST</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 - BEST</item>
     </string-array>
     <string-array name="AllendaleQualifierTeams">
         <item>5292</item>
@@ -48,7 +48,7 @@
         <item>10104</item>
         <item>10255</item>
         <item>10315</item>
-        <item>10477</item>
+        <!--<item>10477</item>-->
         <item>10818</item>
         <item>11266</item>
         <item>11317</item>
@@ -66,5 +66,44 @@
         <item>12948</item>
         <item>13021</item>
         <item>13300</item>
+        <item>13809</item>
+    </string-array>
+    <string-array name="BigRapidsQualifierTeams">
+        <item>5383</item>
+        <item>5384</item>
+        <item>5641</item>
+        <item>5954</item>
+        <item>6043</item>
+        <item>6070</item>
+        <item>6134</item>
+        <item>7023</item>
+        <item>7837</item>
+        <item>7911</item>
+        <item>8027</item>
+        <item>8533</item>
+        <item>8932</item>
+        <item>10601</item>
+        <item>10611</item>
+        <item>10615</item>
+        <item>10699</item>
+        <item>11129</item>
+        <item>11317</item>
+        <item>11318</item>
+        <item>11531</item>
+        <item>11559</item>
+        <item>11616</item>
+        <item>11870</item>
+        <item>11940</item>
+        <item>12504</item>
+        <item>12603</item>
+        <item>12821</item>
+        <item>12921</item>
+        <item>13009</item>
+        <item>13150</item>
+        <item>13222</item>
+        <item>13298</item>
+        <item>13335</item>
+        <item>13450</item>
+        <item>13469</item>
     </string-array>
 </resources>
