@@ -31,20 +31,20 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Spinner spinnerJewel = (Spinner) findViewById(R.id.jewelSpinner);
-        ArrayAdapter<CharSequence> Jadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
-        Jadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerJewel.setAdapter(Jadapt);
+//        Spinner spinnerJewel = (Spinner) findViewById(R.id.jewelSpinner);
+//        ArrayAdapter<CharSequence> Jadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
+//        Jadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinnerJewel.setAdapter(Jadapt);
 
-        Spinner spinnerGlyph = (Spinner) findViewById(R.id.glyphSpinner);
-        ArrayAdapter<CharSequence> Gadapt = ArrayAdapter.createFromResource(this, R.array.ASR, android.R.layout.simple_spinner_item);
-        Gadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerGlyph.setAdapter(Gadapt);
+//        Spinner spinnerGlyph = (Spinner) findViewById(R.id.glyphSpinner);
+//        ArrayAdapter<CharSequence> Gadapt = ArrayAdapter.createFromResource(this, R.array.ASR, android.R.layout.simple_spinner_item);
+//        Gadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinnerGlyph.setAdapter(Gadapt);
 
-        Spinner spinnerSZone = (Spinner) findViewById(R.id.safeZoneSpinner);
-        ArrayAdapter<CharSequence> SZadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
-        SZadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerSZone.setAdapter(SZadapt);
+//        Spinner spinnerSZone = (Spinner) findViewById(R.id.safeZoneSpinner);
+//        ArrayAdapter<CharSequence> SZadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
+//        SZadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinnerSZone.setAdapter(SZadapt);
 
         Spinner spinnerRZone = (Spinner) findViewById(R.id.relicZoneSpinner);
         ArrayAdapter<CharSequence> RZadapt = ArrayAdapter.createFromResource(this, R.array.RZ, android.R.layout.simple_spinner_item);
@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
         EditText scoutName = (EditText) findViewById(R.id.scoutName);
         EditText matchNum = (EditText) findViewById(R.id.matchNumber);
 
+        CheckBox autoJewel = (CheckBox) findViewById(R.id.checkBox_jewel);
+        CheckBox autoGlyph = (CheckBox) findViewById(R.id.checkBox_glyph);
+        CheckBox autoColumn = (CheckBox) findViewById(R.id.checkBox_correctColumn);
+        CheckBox autoSafeZone = (CheckBox) findViewById(R.id.checkBox_safezone);
         CheckBox boxPattern = (CheckBox) findViewById(R.id.checkBox);
 
         Button submitButton = (Button) findViewById(R.id.submitButton);
@@ -150,9 +154,10 @@ public class MainActivity extends AppCompatActivity {
                     output.put("name", scoutName.getText());
                     output.put("team_number", spinnerTeams.getSelectedItem().toString());
                     output.put("match_number", matchNum.getText());
-                    output.put("auto_jewel", spinnerJewel.getSelectedItem().toString());
-                    output.put("auto_glyph", spinnerGlyph.getSelectedItem().toString());
-                    output.put("auto_safezone", spinnerSZone.getSelectedItem().toString());
+                    output.put("auto_jewel", autoJewel.isChecked());
+                    output.put("auto_glyph", autoGlyph.isChecked());
+                    output.put("auto_glyphColumn", autoColumn.isChecked());
+                    output.put("auto_safezone", autoSafeZone.isChecked());
                     output.put("tele_glyphs", Integer.parseInt(numGlyphs.getText().toString()));
                     output.put("tele_rows", Integer.parseInt(numRows.getText().toString()));
                     output.put("tele_columns", Integer.parseInt(numColumns.getText().toString()));
@@ -189,9 +194,10 @@ public class MainActivity extends AppCompatActivity {
                 spinnerTeams.setSelection(0);
                 allianceSwitch.setChecked(false);
                 matchNum.setText("");
-                spinnerJewel.setSelection(0);
-                spinnerGlyph.setSelection(0);
-                spinnerSZone.setSelection(0);
+                autoJewel.setChecked(false);
+                autoGlyph.setChecked(false);
+                autoColumn.setChecked(false);
+                autoSafeZone.setChecked(false);
                 numGlyphs.setText("0");
                 numRows.setText("0");
                 numColumns.setText("0");

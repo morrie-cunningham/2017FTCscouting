@@ -2,13 +2,11 @@
     <string name="app_name">FTC-Match-Scout</string>
     <string name="action_files">Files</string>
     <string-array name="ASN">
-        <item>Neither</item>
-        <item>Attempted</item>
-        <item>Successful</item>
+        <item>Fail</item>
+        <item>Success</item>
     </string-array>
     <string-array name="ASR">
-        <item>NONE</item>
-        <item>Attempted</item>
+        <item>Neither</item>
         <item>Successful</item>
         <item>Read Key</item>
     </string-array>
