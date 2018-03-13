@@ -154,4 +154,43 @@
         <item>13250</item>
         <item>13702</item>
     </string-array>
+    <string-array name="SRTeams">
+        <item></item>
+        <item>3507</item>
+        <item>3763</item>
+        <item>5040</item>
+        <item>5140</item>
+        <item>5975</item>
+        <item>6287</item>
+        <item>6596</item>
+        <item>6931</item>
+        <item>7023</item>
+        <item>7048</item>
+        <item>7190</item>
+        <item>7693</item>
+        <item>8133</item>
+        <item>8533</item>
+        <item>8620</item>
+        <item>8646</item>
+        <item>8711</item>
+        <item>8749</item>
+        <item>8808</item>
+        <item>8813</item>
+        <item>8817</item>
+        <item>9205</item>
+        <item>9890</item>
+        <item>9956</item>
+        <item>9968</item>
+        <item>9978</item>
+        <item>10309</item>
+        <item>10435</item>
+        <item>11190</item>
+        <item>11872</item>
+        <item>12231</item>
+        <item>12528</item>
+        <item>12549</item>
+        <item>12682</item>
+        <item>12835</item>
+        <item>13178</item>
+    </string-array>
 </resources>

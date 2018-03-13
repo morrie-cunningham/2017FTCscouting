@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerDT.setAdapter(DTadapt);
 
         Spinner spinnerTeams = (Spinner) findViewById(R.id.teamNumberSpinner);
-        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.StateTeams, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.SRTeams, android.R.layout.simple_spinner_item);
         TeamsAdapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTeams.setAdapter(TeamsAdapt);
 
@@ -146,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setOnClickListener(v -> {
             if (scoutName.getText().toString().equals("")) {
                 Snackbar.make(findViewById(R.id.myConstraintLayout), "Please enter Scout Name", Snackbar.LENGTH_SHORT).show();
+            } else if (spinnerTeams.getSelectedItem().equals("")) {
+                Snackbar.make(findViewById(R.id.myConstraintLayout), "Please enter Team Number", Snackbar.LENGTH_SHORT).show();
             } else if (matchNum.getText().toString().equals("")) {
                 Snackbar.make(findViewById(R.id.myConstraintLayout), "Please enter Match Number", Snackbar.LENGTH_SHORT).show();
             } else {
